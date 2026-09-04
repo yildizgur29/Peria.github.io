@@ -1,0 +1,481 @@
+<title>Neon Blocks Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f6f5fb;
+    --surface: #ffffff;
+    --surface-2: #edeafc;
+    --text: #1c1730;
+    --text-muted: #635c82;
+    --border: rgba(28, 23, 48, 0.13);
+    --accent: #0089a0;
+    --accent-strong: #00647a;
+    --accent-2: #af1578;
+    --good: #1e8e3e;
+    --chip-bg: rgba(0, 137, 160, 0.08);
+    --shadow: 0 1px 2px rgba(28, 23, 48, 0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #100a22;
+      --surface: #170f30;
+      --surface-2: #1e1440;
+      --text: #ede9fb;
+      --text-muted: #a79fc9;
+      --border: rgba(167, 159, 201, 0.18);
+      --accent: #22e3ff;
+      --accent-strong: #7cf0ff;
+      --accent-2: #ff4fb0;
+      --good: #39ff14;
+      --chip-bg: rgba(34, 227, 255, 0.08);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #100a22;
+    --surface: #170f30;
+    --surface-2: #1e1440;
+    --text: #ede9fb;
+    --text-muted: #a79fc9;
+    --border: rgba(167, 159, 201, 0.18);
+    --accent: #22e3ff;
+    --accent-strong: #7cf0ff;
+    --accent-2: #ff4fb0;
+    --good: #39ff14;
+    --chip-bg: rgba(34, 227, 255, 0.08);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+  }
+
+  /* ---- header ---- */
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .mark {
+    flex: none;
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand-text h1 {
+    font-family: "Chakra Petch", system-ui, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin: 0;
+    color: var(--text);
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 2px 0 0;
+  }
+
+  .lang-toggle {
+    display: flex;
+    flex: none;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px;
+    gap: 2px;
+    background: var(--surface);
+  }
+
+  .lang-toggle button {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    padding: 5px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+
+  .lang-toggle button[aria-pressed="true"] {
+    background: var(--accent);
+    color: #04141a;
+    font-weight: 600;
+  }
+
+  .lang-toggle button:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .meta-line {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    margin: 0 0 26px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .meta-line b { color: var(--text); font-weight: 500; }
+
+  /* ---- quick facts ---- */
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 34px;
+  }
+
+  .fact {
+    background: var(--chip-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    box-shadow: var(--shadow);
+  }
+
+  .fact .dot {
+    flex: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--good);
+    margin-top: 6px;
+    box-shadow: 0 0 6px var(--good);
+  }
+
+  .fact span {
+    font-size: 0.83rem;
+    color: var(--text);
+  }
+
+  /* ---- article ---- */
+
+  article h2 {
+    font-family: "Chakra Petch", system-ui, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+    margin: 2.1em 0 0.6em;
+    padding-top: 0.9em;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  article > .lang > h2:first-of-type,
+  article > .lang > section:first-of-type h2 {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  article p {
+    max-width: 62ch;
+    margin: 0 0 1em;
+    color: var(--text);
+  }
+
+  article p.muted { color: var(--text-muted); font-size: 0.92rem; }
+
+  code, .mono {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.9em;
+    background: var(--surface-2);
+    padding: 0.1em 0.4em;
+    border-radius: 5px;
+  }
+
+  a { color: var(--accent-strong); text-decoration-color: var(--border); }
+  a:hover { text-decoration-color: currentColor; }
+
+  ul.list {
+    margin: 0 0 1em;
+    padding-left: 1.3em;
+    max-width: 62ch;
+  }
+  ul.list li { margin-bottom: 0.45em; }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent-2);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 1.2em 0;
+    max-width: 62ch;
+    box-shadow: var(--shadow);
+  }
+  .callout p { margin: 0; font-size: 0.93rem; }
+
+  footer {
+    margin-top: 3em;
+    padding-top: 1.4em;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  [hidden] { display: none !important; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    article, .facts { animation: rise 0.35s ease both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  }
+
+  @media (max-width: 480px) {
+    header { flex-direction: column; }
+    .lang-toggle { align-self: flex-start; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="2" width="12" height="9" rx="2.5" fill="var(--good)"/>
+        <rect x="18" y="2" width="14" height="9" rx="2.5" fill="#ffd54f"/>
+        <rect x="2" y="15" width="14" height="9" rx="2.5" fill="var(--accent-2)"/>
+        <rect x="20" y="15" width="12" height="9" rx="2.5" fill="var(--accent)"/>
+        <circle cx="27" cy="30" r="3.4" fill="var(--text)"/>
+      </svg>
+      <div class="brand-text">
+        <p class="eyebrow" id="eyebrow">Privacy Policy</p>
+        <h1>NEON BLOCKS</h1>
+      </div>
+    </div>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" id="btn-en" aria-pressed="true">EN</button>
+      <button type="button" id="btn-tr" aria-pressed="false">TR</button>
+    </div>
+  </header>
+
+  <p class="meta-line">
+    <span>Effective <b>September 4, 2026</b></span>
+    <span>Package <b class="mono">com.gurkanyildiz.smashfest</b></span>
+    <span>Contact <b><a href="mailto:yildiz.gur@gmail.com">yildiz.gur@gmail.com</a></b></span>
+  </p>
+
+  <div class="facts">
+    <div class="fact"><span class="dot"></span><span id="f1">No account or sign-in required</span></div>
+    <div class="fact"><span class="dot"></span><span id="f2">No personal information collected</span></div>
+    <div class="fact"><span class="dot"></span><span id="f3">Ads: not currently shown</span></div>
+    <div class="fact"><span class="dot"></span><span id="f4">Progress stored only on your device</span></div>
+  </div>
+
+  <article>
+    <div class="lang" data-lang="en">
+      <section>
+        <h2><span class="num">01</span> Overview</h2>
+        <p>Neon Blocks ("the app") is a single-player arcade game. This policy explains what information the app handles, how, and why. The short version: the app does not collect or transmit any personal information. Your progress is stored only on your own device.</p>
+      </section>
+      <section>
+        <h2><span class="num">02</span> Information stored on your device</h2>
+        <p>The app saves the following locally, using Android's standard app-storage mechanism, so your progress survives closing and reopening the app:</p>
+        <ul class="list">
+          <li>High score and the current level reached</li>
+          <li>Neon Kredi (in-game currency) balance, and which cosmetic ball/paddle skins you've unlocked or equipped</li>
+          <li>Your chosen language (Turkish/English) and sound on/off setting</li>
+        </ul>
+        <p>None of this leaves your device, and none of it is linked to you personally &mdash; there's no account, username, or profile of any kind. Uninstalling the app deletes all of it.</p>
+      </section>
+      <section>
+        <h2><span class="num">03</span> Advertising &mdash; not currently active</h2>
+        <p>This version of Neon Blocks includes the Google Mobile Ads (AdMob) SDK as part of the app, but <b>no ads are shown and no advertising data is collected by this version.</b> It's included so ad support can be turned on in a future update without requiring a whole new app install.</p>
+        <div class="callout">
+          <p>If a future update turns ads on, that update's Play Store listing and this page will both be updated first to explain what changes. At that point, Google AdMob would begin collecting device and advertising identifiers and usage data to show and measure ads, governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> and AdMob's own policies.</p>
+        </div>
+      </section>
+      <section>
+        <h2><span class="num">04</span> Permissions</h2>
+        <p>The app requests network access (Internet / network state). In this version that's unused reserved capacity tied to the bundled ad SDK described above &mdash; the app doesn't currently send anything over the network. The app does not request access to your camera, microphone, contacts, location, photos, or files.</p>
+      </section>
+      <section>
+        <h2><span class="num">05</span> Data sharing</h2>
+        <p>The app does not sell or share any personal information with third parties, because it does not collect any.</p>
+      </section>
+      <section>
+        <h2><span class="num">06</span> Children's privacy</h2>
+        <p>Neon Blocks is a general-audience game and is not directed at children under 13. The app does not knowingly collect personal information from anyone, regardless of age.</p>
+      </section>
+      <section>
+        <h2><span class="num">07</span> Your choices</h2>
+        <p>You can change the app's language or mute sound at any time from in-game settings. Uninstalling the app removes every piece of data described above from your device.</p>
+      </section>
+      <section>
+        <h2><span class="num">08</span> Changes to this policy</h2>
+        <p>If this policy changes &mdash; most likely when ads are actually turned on &mdash; the updated version will be published at this same page, with a new effective date above.</p>
+      </section>
+      <section>
+        <h2><span class="num">09</span> Contact</h2>
+        <p>Questions about this policy or the app can be sent to <a href="mailto:yildiz.gur@gmail.com">yildiz.gur@gmail.com</a>.</p>
+      </section>
+    </div>
+
+    <div class="lang" data-lang="tr" hidden>
+      <section>
+        <h2><span class="num">01</span> Genel Bakış</h2>
+        <p>Neon Blocks ("uygulama"), tek oyunculu bir arcade oyunudur. Bu politika, uygulamanın hangi bilgileri, nasıl ve neden işlediğini açıklar. Kısacası: uygulama hiçbir kişisel bilgiyi toplamaz veya iletmez. İlerlemeniz yalnızca kendi cihazınızda saklanır.</p>
+      </section>
+      <section>
+        <h2><span class="num">02</span> Cihazınızda saklanan bilgiler</h2>
+        <p>Uygulama, Android'in standart uygulama depolama mekanizmasını kullanarak şunları yerel olarak kaydeder (böylece uygulamayı kapatıp tekrar açtığınızda ilerlemeniz kaybolmaz):</p>
+        <ul class="list">
+          <li>En yüksek skor ve ulaşılan mevcut seviye</li>
+          <li>Neon Kredi (oyun içi para birimi) bakiyesi ve açtığınız/kullandığınız kozmetik top/raket görünümleri</li>
+          <li>Seçtiğiniz dil (Türkçe/İngilizce) ve ses açık/kapalı ayarı</li>
+        </ul>
+        <p>Bunların hiçbiri cihazınızdan çıkmaz ve hiçbiri kişisel olarak sizinle ilişkilendirilmez &mdash; hesap, kullanıcı adı veya herhangi bir profil yoktur. Uygulamayı kaldırmak bu verilerin tamamını siler.</p>
+      </section>
+      <section>
+        <h2><span class="num">03</span> Reklamlar &mdash; şu an aktif değil</h2>
+        <p>Neon Blocks'un bu sürümü, Google Mobile Ads (AdMob) SDK'sını uygulamanın bir parçası olarak içerir, ancak <b>bu sürümde hiçbir reklam gösterilmez ve hiçbir reklam verisi toplanmaz.</b> Bu, ileride tamamen yeni bir uygulama kurmaya gerek kalmadan reklam desteğinin bir güncellemeyle açılabilmesi için eklenmiştir.</p>
+        <div class="callout">
+          <p>İleride bir güncelleme reklamları etkinleştirirse, o güncellemenin Play Store listesi ve bu sayfa önce güncellenerek neyin değiştiği açıklanacaktır. O noktada Google AdMob, reklamları göstermek ve ölçmek için cihaz ve reklam kimlikleri ile kullanım verilerini toplamaya başlar; bu, <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google'ın gizlilik politikası</a> ve AdMob politikaları kapsamında yürütülür.</p>
+        </div>
+      </section>
+      <section>
+        <h2><span class="num">04</span> İzinler</h2>
+        <p>Uygulama ağ erişimi (İnternet / ağ durumu) ister. Bu sürümde bu izin, yukarıda açıklanan gömülü reklam SDK'sına bağlı, kullanılmayan bir kapasitedir &mdash; uygulama şu anda ağ üzerinden hiçbir şey göndermez. Uygulama kameranıza, mikrofonunuza, kişilerinize, konumunuza, fotoğraflarınıza veya dosyalarınıza erişim istemez.</p>
+      </section>
+      <section>
+        <h2><span class="num">05</span> Veri paylaşımı</h2>
+        <p>Uygulama, hiçbir kişisel bilgi toplamadığı için üçüncü taraflarla hiçbir kişisel bilgiyi satmaz veya paylaşmaz.</p>
+      </section>
+      <section>
+        <h2><span class="num">06</span> Çocukların gizliliği</h2>
+        <p>Neon Blocks genel kitleye yönelik bir oyundur ve 13 yaş altı çocukları hedeflemez. Uygulama, yaş fark etmeksizin kimseden bilerek kişisel bilgi toplamaz.</p>
+      </section>
+      <section>
+        <h2><span class="num">07</span> Tercihleriniz</h2>
+        <p>Uygulama içi ayarlardan istediğiniz zaman dili değiştirebilir veya sesi kapatabilirsiniz. Uygulamayı kaldırmak, yukarıda açıklanan tüm verileri cihazınızdan siler.</p>
+      </section>
+      <section>
+        <h2><span class="num">08</span> Bu politikadaki değişiklikler</h2>
+        <p>Bu politika değişirse &mdash; büyük ihtimalle reklamlar gerçekten açıldığında &mdash; güncel sürüm bu sayfada, yukarıda yeni bir yürürlük tarihiyle yayımlanır.</p>
+      </section>
+      <section>
+        <h2><span class="num">09</span> İletişim</h2>
+        <p>Bu politika veya uygulama hakkındaki sorularınızı <a href="mailto:yildiz.gur@gmail.com">yildiz.gur@gmail.com</a> adresine gönderebilirsiniz.</p>
+      </section>
+    </div>
+  </article>
+
+  <footer>
+    <span id="foot-left">Neon Blocks &mdash; single-player arcade game</span>
+    <span id="foot-right">Google Play data safety reference page</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var STRINGS = {
+      en: {
+        eyebrow: 'Privacy Policy',
+        facts: [
+          'No account or sign-in required',
+          'No personal information collected',
+          'Ads: not currently shown',
+          'Progress stored only on your device'
+        ],
+        footLeft: 'Neon Blocks — single-player arcade game',
+        footRight: 'Google Play data safety reference page'
+      },
+      tr: {
+        eyebrow: 'Gizlilik Politikası',
+        facts: [
+          'Hesap veya giriş gerekmez',
+          'Kişisel bilgi toplanmaz',
+          'Reklamlar: şu an gösterilmiyor',
+          'İlerleme yalnızca cihazınızda saklanır'
+        ],
+        footLeft: 'Neon Blocks — tek oyunculu arcade oyunu',
+        footRight: 'Google Play veri güvenliği referans sayfası'
+      }
+    };
+
+    var factEls = [document.getElementById('f1'), document.getElementById('f2'), document.getElementById('f3'), document.getElementById('f4')];
+
+    function applyLang(lang) {
+      var s = STRINGS[lang];
+      document.getElementById('eyebrow').textContent = s.eyebrow;
+      factEls.forEach(function (el, i) { el.textContent = s.facts[i]; });
+      document.getElementById('foot-left').textContent = s.footLeft;
+      document.getElementById('foot-right').textContent = s.footRight;
+      document.querySelectorAll('.lang').forEach(function (el) {
+        el.hidden = el.getAttribute('data-lang') !== lang;
+      });
+      document.getElementById('btn-en').setAttribute('aria-pressed', String(lang === 'en'));
+      document.getElementById('btn-tr').setAttribute('aria-pressed', String(lang === 'tr'));
+      document.documentElement.setAttribute('lang', lang);
+      try { localStorage.setItem('nb-privacy-lang', lang); } catch (e) {}
+    }
+
+    var initial = 'en';
+    try {
+      var stored = localStorage.getItem('nb-privacy-lang');
+      if (stored === 'en' || stored === 'tr') {
+        initial = stored;
+      } else if ((navigator.language || '').toLowerCase().indexOf('tr') === 0) {
+        initial = 'tr';
+      }
+    } catch (e) {
+      if ((navigator.language || '').toLowerCase().indexOf('tr') === 0) initial = 'tr';
+    }
+
+    document.getElementById('btn-en').addEventListener('click', function () { applyLang('en'); });
+    document.getElementById('btn-tr').addEventListener('click', function () { applyLang('tr'); });
+    applyLang(initial);
+  })();
+</script>
