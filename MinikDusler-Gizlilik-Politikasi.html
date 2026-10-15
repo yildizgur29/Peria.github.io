@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minik Düşler-1 Privacy Policy / Gizlilik Politikası</title>
+<style>
+  :root {
+    --bg: #f6f5fb;
+    --surface: #ffffff;
+    --surface-2: #edeafc;
+    --text: #1c1730;
+    --text-muted: #635c82;
+    --border: rgba(28, 23, 48, 0.13);
+    --accent: #7a63d6;
+    --accent-strong: #4a35a0;
+    --accent-2: #d9588a;
+    --good: #1e8e3e;
+    --chip-bg: rgba(122, 99, 214, 0.08);
+    --shadow: 0 1px 2px rgba(28, 23, 48, 0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #100a22;
+      --surface: #170f30;
+      --surface-2: #1e1440;
+      --text: #ede9fb;
+      --text-muted: #a79fc9;
+      --border: rgba(167, 159, 201, 0.18);
+      --accent: #b7a6ff;
+      --accent-strong: #d9ceff;
+      --accent-2: #ff8fb8;
+      --good: #5ee08a;
+      --chip-bg: rgba(183, 166, 255, 0.10);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #100a22;
+    --surface: #170f30;
+    --surface-2: #1e1440;
+    --text: #ede9fb;
+    --text-muted: #a79fc9;
+    --border: rgba(167, 159, 201, 0.18);
+    --accent: #b7a6ff;
+    --accent-strong: #d9ceff;
+    --accent-2: #ff8fb8;
+    --good: #5ee08a;
+    --chip-bg: rgba(183, 166, 255, 0.10);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+  }
+
+  /* ---- header ---- */
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .mark {
+    flex: none;
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand-text h1 {
+    font-family: system-ui, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin: 0;
+    color: var(--text);
+  }
+
+  .eyebrow {
+    font-family: ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 2px 0 0;
+  }
+
+  .lang-toggle {
+    display: flex;
+    flex: none;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px;
+    gap: 2px;
+    background: var(--surface);
+  }
+
+  .lang-toggle button {
+    font-family: ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    padding: 5px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+
+  .lang-toggle button[aria-pressed="true"] {
+    background: var(--accent);
+    color: #1c1730;
+    font-weight: 600;
+  }
+
+  .lang-toggle button:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .meta-line {
+    font-family: ui-monospace, monospace;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    margin: 0 0 26px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .meta-line b { color: var(--text); font-weight: 500; }
+
+  /* ---- quick facts ---- */
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 34px;
+  }
+
+  .fact {
+    background: var(--chip-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    box-shadow: var(--shadow);
+  }
+
+  .fact .dot {
+    flex: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--good);
+    margin-top: 6px;
+    box-shadow: 0 0 6px var(--good);
+  }
+
+  .fact span {
+    font-size: 0.83rem;
+    color: var(--text);
+  }
+
+  /* ---- article ---- */
+
+  article h2 {
+    font-family: system-ui, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+    margin: 2.1em 0 0.6em;
+    padding-top: 0.9em;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  article > .lang > h2:first-of-type,
+  article > .lang > section:first-of-type h2 {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .num {
+    font-family: ui-monospace, monospace;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  article p {
+    max-width: 62ch;
+    margin: 0 0 1em;
+    color: var(--text);
+  }
+
+  article p.muted { color: var(--text-muted); font-size: 0.92rem; }
+
+  code, .mono {
+    font-family: ui-monospace, monospace;
+    font-size: 0.9em;
+    background: var(--surface-2);
+    padding: 0.1em 0.4em;
+    border-radius: 5px;
+  }
+
+  a { color: var(--accent-strong); text-decoration-color: var(--border); }
+  a:hover { text-decoration-color: currentColor; }
+
+  ul.list {
+    margin: 0 0 1em;
+    padding-left: 1.3em;
+    max-width: 62ch;
+  }
+  ul.list li { margin-bottom: 0.45em; }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent-2);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 1.2em 0;
+    max-width: 62ch;
+    box-shadow: var(--shadow);
+  }
+  .callout p { margin: 0; font-size: 0.93rem; }
+
+  footer {
+    margin-top: 3em;
+    padding-top: 1.4em;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  [hidden] { display: none !important; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    article, .facts { animation: rise 0.35s ease both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  }
+
+  @media (max-width: 480px) {
+    header { flex-direction: column; }
+    .lang-toggle { align-self: flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M17 9C13 6 8 6 3 8v18c5-2 10-2 14 1 4-3 9-3 14-1V8c-5-2-10-2-14 1z" fill="#ffd54f"/>
+        <path d="M17 9v18" stroke="var(--text)" stroke-width="1.6"/>
+        <circle cx="26" cy="7" r="3" fill="var(--accent-2)"/>
+      </svg>
+      <div class="brand-text">
+        <p class="eyebrow" id="eyebrow">Privacy Policy</p>
+        <h1>MİNİK DÜŞLER-1</h1>
+      </div>
+    </div>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" id="btn-en" aria-pressed="true">EN</button>
+      <button type="button" id="btn-tr" aria-pressed="false">TR</button>
+    </div>
+  </header>
+
+  <p class="meta-line">
+    <span id="meta-eff">Effective <b>October 15, 2026</b></span>
+    <span>Contact <b><a href="mailto:yildiz.gur@gmail.com">yildiz.gur@gmail.com</a></b></span>
+  </p>
+
+  <div class="facts">
+    <div class="fact"><span class="dot"></span><span id="f1">No accounts, no sign-in</span></div>
+    <div class="fact"><span class="dot"></span><span id="f2">No ads, no analytics, no tracking</span></div>
+    <div class="fact"><span class="dot"></span><span id="f3">Developer runs no server and receives no personal data</span></div>
+    <div class="fact"><span class="dot"></span><span id="f4">Purchases handled by Google Play, behind a parental gate</span></div>
+  </div>
+
+  <article>
+    <div class="lang" data-lang="en">
+      <section>
+        <h2><span class="num">01</span> Overview</h2>
+        <p>Minik Düşler-1 ("the app") is a children's storybook app with illustrated stories and a simple color-sorting game, made for families and young children. This policy explains what information the app handles, how, and why. The short version: the app has no accounts, no ads and no analytics, the developer runs no server and receives no personal information from the app, and the only third-party service involved is Google Play, which processes the optional one-time purchase (section 03).</p>
+      </section>
+      <section>
+        <h2><span class="num">02</span> Information stored on your device</h2>
+        <p>The app saves the following locally, using Android's standard app-storage mechanism, so your place in the books and in the game survives closing and reopening the app:</p>
+        <ul class="list">
+          <li>The last page you read in each storybook, and the level and stars you reached in the color-sorting game</li>
+          <li>Whether you have seen the short in-game hints, and your music on/off setting</li>
+          <li>Whether the full set of books has been unlocked on this device (the result of the purchase described in section 03)</li>
+        </ul>
+        <p>None of this leaves your device and none of it identifies you. Uninstalling the app deletes everything the app stored on your device.</p>
+      </section>
+      <section>
+        <h2><span class="num">03</span> Purchases (Google Play Billing)</h2>
+        <p>The first two pages of every storybook are free. A single, one-time in-app purchase ("unlock all books") opens every page of every book. The purchase is made through <b>Google Play</b>, using Google Play Billing.</p>
+        <ul class="list">
+          <li><b>Payment is handled entirely by Google.</b> Your payment method and payment details are entered in Google Play's own purchase screen; the app and the developer never see or receive them.</li>
+          <li>Google tells the app whether the purchase was completed so that the books can be unlocked. As with any app sold through Google Play, the developer can see order and transaction information (such as order number, product, date and status) in the Google Play Console, but not your payment details.</li>
+          <li>You can restore a previous purchase on the same Google account with the "restore purchase" button, for example after reinstalling the app or changing devices.</li>
+          <li>Refunds and purchase management follow Google Play's own policies and settings.</li>
+        </ul>
+        <div class="callout">
+          <p><b>Parental gate.</b> Before the purchase screen or the restore option is shown, the app asks a simple arithmetic question meant for adults, so that children do not make purchases by accident. The answer is checked on the device only and is not stored or sent anywhere.</p>
+        </div>
+      </section>
+      <section>
+        <h2><span class="num">04</span> Permissions</h2>
+        <p>The app declares the Google Play billing permission (<code>com.android.vending.BILLING</code>) and network access (Internet / network state). Network access is declared by Google's Play Billing library (through Google's data-transport component) so that Google Play can complete or restore a purchase and exchange its own technical and diagnostic information with Google; the app itself does not send your reading progress, game progress, or any other usage data over the network. The app does not request access to your camera, microphone, contacts, location, photos, or files. While the app is open it keeps the screen from turning off, which does not require any permission.</p>
+      </section>
+      <section>
+        <h2><span class="num">05</span> Advertising and analytics</h2>
+        <p>The app contains <b>no advertising</b>, no advertising SDK, and does not read or use your device's advertising ID. It contains no analytics, crash-reporting, or tracking SDK, and does not use cookies or similar tracking technologies. It has no social features, chat, or external links for children to follow.</p>
+      </section>
+      <section>
+        <h2><span class="num">06</span> Data sharing</h2>
+        <p>The developer does not collect, sell, rent, or share personal information, because the app does not send any to the developer. Data leaves your device only through Google Play when you make or restore a purchase (section 03), which is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> and the Google Play terms.</p>
+      </section>
+      <section>
+        <h2><span class="num">07</span> Children's privacy</h2>
+        <p>The app is designed for families and for children, including children under 13. It does not ask for or collect personal information from anyone, regardless of age. It has no accounts, no free-text input, no photos or camera, no ads, and no links that lead children outside the app. The only action involving money is the optional purchase, which is protected by the parental gate described in section 03, and we recommend that parents or guardians supervise it. If you believe a child's information has somehow been shared, or you have any concern, contact us (section 10).</p>
+      </section>
+      <section>
+        <h2><span class="num">08</span> Your choices</h2>
+        <p>You can turn the music on or off at any time from inside the app. You can use the app, the first two pages of every book, and the game without ever making a purchase. Uninstalling the app removes the data described in section 02 from your device. Purchases and refunds can be managed in the Google Play Store app under your Google account.</p>
+      </section>
+      <section>
+        <h2><span class="num">09</span> Changes to this policy</h2>
+        <p>If this policy changes &mdash; for example if the app adds new features that handle information &mdash; the updated version will be published at this same page, with a new effective date above.</p>
+      </section>
+      <section>
+        <h2><span class="num">10</span> Contact</h2>
+        <p>Questions about this policy or the app can be sent to <a href="mailto:yildiz.gur@gmail.com">yildiz.gur@gmail.com</a>.</p>
+      </section>
+    </div>
+
+    <div class="lang" data-lang="tr" hidden>
+      <section>
+        <h2><span class="num">01</span> Genel Bakış</h2>
+        <p>Minik Düşler-1 ("uygulama"), resimli hikâyeler ve basit bir renk toplama oyunu içeren, aileler ve küçük çocuklar için hazırlanmış bir çocuk hikâye kitabı uygulamasıdır. Bu politika, uygulamanın hangi bilgileri, nasıl ve neden işlediğini açıklar. Kısacası: uygulamada hesap, reklam ve analiz yoktur; geliştirici herhangi bir sunucu işletmez ve uygulamadan kişisel bilgi almaz; devrede olan tek üçüncü taraf hizmet, isteğe bağlı tek seferlik satın almayı işleyen Google Play'dir (bölüm 03).</p>
+      </section>
+      <section>
+        <h2><span class="num">02</span> Cihazınızda saklanan bilgiler</h2>
+        <p>Uygulamayı kapatıp açtığınızda kitaplarda ve oyunda kaldığınız yerin korunması için aşağıdakiler, Android'in standart uygulama depolama mekanizmasıyla cihazınızda saklanır:</p>
+        <ul class="list">
+          <li>Her hikâye kitabında okuduğunuz son sayfa, renk toplama oyununda ulaştığınız seviye ve yıldızlar</li>
+          <li>Kısa oyun içi ipuçlarını görüp görmediğiniz ve müzik açık/kapalı ayarınız</li>
+          <li>Bu cihazda tüm kitapların açılıp açılmadığı (bölüm 03'te anlatılan satın almanın sonucu)</li>
+        </ul>
+        <p>Bunların hiçbiri cihazınızdan dışarı çıkmaz ve sizi tanımlamaz. Uygulamayı kaldırmak, uygulamanın cihazınızda sakladığı her şeyi siler.</p>
+      </section>
+      <section>
+        <h2><span class="num">03</span> Satın alma (Google Play Faturalandırma)</h2>
+        <p>Her hikâye kitabının ilk iki sayfası ücretsizdir. Tek seferlik bir uygulama içi satın alma ("tüm kitapları aç") bütün kitapların tüm sayfalarını açar. Satın alma, Google Play Faturalandırma kullanılarak <b>Google Play</b> üzerinden yapılır.</p>
+        <ul class="list">
+          <li><b>Ödemeyi tamamen Google işler.</b> Ödeme yönteminiz ve ödeme bilgileriniz Google Play'in kendi satın alma ekranına girilir; uygulama ve geliştirici bunları hiçbir zaman görmez veya almaz.</li>
+          <li>Google, kitapların açılabilmesi için satın almanın tamamlanıp tamamlanmadığını uygulamaya bildirir. Google Play üzerinden satılan her uygulamada olduğu gibi, geliştirici Google Play Console'da sipariş ve işlem bilgilerini (sipariş numarası, ürün, tarih ve durum gibi) görebilir, ancak ödeme bilgilerinizi göremez.</li>
+          <li>Aynı Google hesabındaki önceki bir satın almayı, örneğin uygulamayı yeniden kurduktan veya cihaz değiştirdikten sonra, "satın alımı geri yükle" düğmesiyle geri getirebilirsiniz.</li>
+          <li>İade ve satın alma yönetimi Google Play'in kendi politika ve ayarlarına tabidir.</li>
+        </ul>
+        <div class="callout">
+          <p><b>Ebeveyn kapısı.</b> Satın alma ekranı veya geri yükleme seçeneği gösterilmeden önce, çocukların yanlışlıkla satın alma yapmaması için yetişkinlere yönelik basit bir aritmetik soru sorulur. Cevap yalnızca cihazda kontrol edilir; saklanmaz ve hiçbir yere gönderilmez.</p>
+        </div>
+      </section>
+      <section>
+        <h2><span class="num">04</span> İzinler</h2>
+        <p>Uygulama, Google Play faturalandırma iznini (<code>com.android.vending.BILLING</code>) ve ağ erişimini (İnternet / ağ durumu) bildirir. Ağ erişimi, Google'ın Play Faturalandırma kütüphanesi (Google'ın veri taşıma bileşeni aracılığıyla) tarafından, Google Play'in satın almayı tamamlayabilmesi veya geri yükleyebilmesi ve Google ile kendi teknik ve tanılama bilgilerini alışverişi yapabilmesi için bildirilir; uygulamanın kendisi okuma ilerlemenizi, oyun ilerlemenizi veya başka hiçbir kullanım verisini ağ üzerinden göndermez. Uygulama kameranıza, mikrofonunuza, kişilerinize, konumunuza, fotoğraflarınıza veya dosyalarınıza erişim istemez. Uygulama açıkken ekranın kapanmasını engeller; bunun için herhangi bir izin gerekmez.</p>
+      </section>
+      <section>
+        <h2><span class="num">05</span> Reklam ve analiz</h2>
+        <p>Uygulamada <b>hiçbir reklam</b> ve reklam SDK'sı yoktur; cihazınızın reklam kimliğini okumaz veya kullanmaz. Analiz, çökme raporlama veya izleme SDK'sı içermez; çerez veya benzeri izleme teknolojileri kullanmaz. Çocukların takip edebileceği sosyal özellik, sohbet veya harici bağlantı da yoktur.</p>
+      </section>
+      <section>
+        <h2><span class="num">06</span> Veri paylaşımı</h2>
+        <p>Uygulama geliştiriciye hiçbir kişisel bilgi göndermediği için geliştirici kişisel bilgi toplamaz, satmaz, kiralamaz veya paylaşmaz. Veri cihazınızdan yalnızca bir satın alma yaptığınızda veya geri yüklediğinizde Google Play üzerinden çıkar (bölüm 03); bu, <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google'ın gizlilik politikasına</a> ve Google Play şartlarına tabidir.</p>
+      </section>
+      <section>
+        <h2><span class="num">07</span> Çocukların gizliliği</h2>
+        <p>Uygulama, 13 yaş altı çocuklar dahil, aileler ve çocuklar için tasarlanmıştır. Yaşı ne olursa olsun hiç kimseden kişisel bilgi istemez veya toplamaz. Hesap, serbest metin girişi, fotoğraf veya kamera, reklam ve çocukları uygulama dışına çıkaran bağlantı yoktur. Para içeren tek eylem, isteğe bağlı satın almadır; bu, bölüm 03'te anlatılan ebeveyn kapısıyla korunur ve ebeveynlerin veya vasilerin gözetiminde yapılmasını öneririz. Bir çocuğa ait bilginin paylaşıldığını düşünüyorsanız veya herhangi bir endişeniz varsa bizimle iletişime geçin (bölüm 10).</p>
+      </section>
+      <section>
+        <h2><span class="num">08</span> Tercihleriniz</h2>
+        <p>Müziği uygulama içinden istediğiniz zaman açıp kapatabilirsiniz. Uygulamayı, her kitabın ilk iki sayfasını ve oyunu hiç satın alma yapmadan kullanabilirsiniz. Uygulamayı kaldırmak, bölüm 02'de anlatılan verileri cihazınızdan siler. Satın almaları ve iadeleri Google hesabınız altında Google Play Store uygulamasından yönetebilirsiniz.</p>
+      </section>
+      <section>
+        <h2><span class="num">09</span> Bu politikadaki değişiklikler</h2>
+        <p>Bu politika değişirse &mdash; örneğin uygulama bilgi işleyen yeni özellikler eklerse &mdash; güncel sürüm aynı sayfada, yukarıdaki yeni yürürlük tarihiyle yayımlanır.</p>
+      </section>
+      <section>
+        <h2><span class="num">10</span> İletişim</h2>
+        <p>Bu politika veya uygulama hakkındaki sorularınızı <a href="mailto:yildiz.gur@gmail.com">yildiz.gur@gmail.com</a> adresine gönderebilirsiniz.</p>
+      </section>
+    </div>
+  </article>
+
+  <footer>
+    <span id="foot-left">Minik Düşler-1 &mdash; children's storybook app</span>
+    <span id="foot-right">Google Play data safety reference page</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var STRINGS = {
+      en: {
+        eyebrow: 'Privacy Policy',
+        eff: 'Effective <b>October 15, 2026</b>',
+        facts: [
+          'No accounts, no sign-in',
+          'No ads, no analytics, no tracking',
+          'Developer runs no server and receives no personal data',
+          'Purchases handled by Google Play, behind a parental gate'
+        ],
+        footLeft: 'Minik Düşler-1 — children\'s storybook app',
+        footRight: 'Google Play data safety reference page'
+      },
+      tr: {
+        eyebrow: 'Gizlilik Politikası',
+        eff: 'Yürürlük tarihi <b>15 Ekim 2026</b>',
+        facts: [
+          'Hesap yok, giriş yok',
+          'Reklam, analiz ve izleme yok',
+          'Geliştirici sunucu işletmez, kişisel veri almaz',
+          'Satın alma Google Play ile, ebeveyn kapısı arkasında'
+        ],
+        footLeft: 'Minik Düşler-1 — çocuk hikâye kitabı uygulaması',
+        footRight: 'Google Play veri güvenliği referans sayfası'
+      }
+    };
+
+    var factEls = [document.getElementById('f1'), document.getElementById('f2'), document.getElementById('f3'), document.getElementById('f4')];
+
+    function applyLang(lang) {
+      var s = STRINGS[lang];
+      document.getElementById('eyebrow').textContent = s.eyebrow;
+      document.getElementById('meta-eff').innerHTML = s.eff;
+      factEls.forEach(function (el, i) { el.textContent = s.facts[i]; });
+      document.getElementById('foot-left').textContent = s.footLeft;
+      document.getElementById('foot-right').textContent = s.footRight;
+      document.querySelectorAll('.lang').forEach(function (el) {
+        el.hidden = el.getAttribute('data-lang') !== lang;
+      });
+      document.getElementById('btn-en').setAttribute('aria-pressed', String(lang === 'en'));
+      document.getElementById('btn-tr').setAttribute('aria-pressed', String(lang === 'tr'));
+      document.documentElement.setAttribute('lang', lang);
+      try { localStorage.setItem('md-privacy-lang', lang); } catch (e) {}
+    }
+
+    var initial = 'en';
+    try {
+      var stored = localStorage.getItem('md-privacy-lang');
+      if (stored === 'en' || stored === 'tr') {
+        initial = stored;
+      } else if ((navigator.language || '').toLowerCase().indexOf('tr') === 0) {
+        initial = 'tr';
+      }
+    } catch (e) {
+      if ((navigator.language || '').toLowerCase().indexOf('tr') === 0) initial = 'tr';
+    }
+
+    document.getElementById('btn-en').addEventListener('click', function () { applyLang('en'); });
+    document.getElementById('btn-tr').addEventListener('click', function () { applyLang('tr'); });
+    applyLang(initial);
+  })();
+</script>
+</body>
+</html>
